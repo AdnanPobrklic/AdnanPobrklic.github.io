@@ -306,6 +306,8 @@ span{
 }
 
 .card-contact a {
+    width: 100%;
+    text-align: center;
     color: white;
 }
 
