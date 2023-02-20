@@ -213,7 +213,13 @@ span{
     min-width: 320px;
     width: 70%;
     border-radius: 15px;
-    border: 7px solid var(--third);
+    border: 10px groove var(--third);
+}
+
+#projects img:hover {
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+    border: 10px solid black;
 }
 
 .card{
@@ -288,6 +294,7 @@ span{
 }
 
 .card-contact:hover {
+    cursor: pointer;
     background-color: var(--third);
     color: black;
     transition: all 250ms ease-in-out;
