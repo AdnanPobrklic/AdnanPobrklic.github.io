@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main: #2C3539;
+    --secon: aquamarine;
+    --third: whitesmoke;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--main);
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a{
+    color: var(--third);
+    font-size: 1.2rem;
+    position: relative;
+}
+
+nav a:hover{
+    color: var(--secon);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    border-bottom: 5px solid var(--secon);
+    padding: 35px 0px;
+    text-transform: uppercase;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.849);
+}
+
+nav a::before{
+    content:"";
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: var(--secon);
+
+    position: absolute;
+    bottom: -10px;
+    transition: .5s ease-in-out;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+.heading-h1{
+    margin: 10% 0;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.heading {
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.heading .img-container{
+    min-width: 250px;
+    width: 20%;
+    height: 40%;
+}
+
+.heading img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: groove white 5px;
+}
+
+.heading .text {
+    color: var(--third);
+    width: 35%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 2.1rem;
+}
+
+span{
+    color: var(--secon);
+    font-size: 2.2rem;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+.heading .text .business{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.heading .text .business a{
+    color: black;
+    margin-top: 10%;
+    padding: 10px 15px;
+    outline: none;
+    border: 5px solid black;
+    border-radius: 15px;
+    background-color: var(--secon);
+}
+
+.heading .text .business a:hover{
+    color: var(--third);
+    cursor: pointer;
+    background-color: black;
+    transition: 300ms ease-in-out all;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 60vh;
+    gap: 25px;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--third);
+    background-color: rgba(0, 0, 0, 0.637);
+    border: 10px groove var(--third);
+    position: relative;
+}
+
+#skills img {
+    width: 80%;
+    background-color: var(--third);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#skills img:hover {
+    background-color: var(--secon);
+    cursor: pointer;
+    transition: 100ms ease-in-out all;
+}
+
+#about {
+    color: var(--third);
+    width: 95%;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 50px;
+}
+
+#about-h1 {
+    width: 90%;
+    border-left: 5px solid whitesmoke;
+    padding: 15px;
+    letter-spacing: 3px;
+    font-size: 3rem;
+}
+
+#about p {
+    letter-spacing: 3px;
+    width: 90%;
+    text-align: left;
+    font-size: 2rem;
+}
+
+#projects {
+    margin: 5% auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#projects img {
+    min-width: 320px;
+    width: 70%;
+    border-radius: 15px;
+    border: 7px solid var(--third);
+}
+
+.card{
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;    
+    text-align: center;
+}
+
+.card-text p {
+    width: 60%;
+    margin: auto;
+    font-size: 1.5rem;
+    color: var(--third);
+}
+
+.card-text h1 {
+    color: var(--third);
+    font-size: 2rem;
+    margin: 2.5%;
+    text-decoration: underline;
+}
+
+.card-text a {
+    display: block;
+    width: 30%;
+    padding: 15px;
+    margin: 30px auto;
+    border: 5px solid var(--third);
+    border-radius: 15px;
+    font-size: 1.5rem;
+    background-color: black;
+    color: var(--third);
+    font-family: inherit;
+    letter-spacing: 3px;
+}
+
+.card-text a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 200ms ease-in-out all;
+}
+
+#projects-heading {
+    font-size: 4rem;
+    text-align: center;
+    color: whitesmoke;
+    margin: 2.5%;
+}
+
+#contact {
+    margin: auto;
+    height: 20vh;
+    width: 70%;
+}
+
+.card-contact {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: var(--third);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10% 0px;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+.card-contact:hover {
+    background-color: var(--third);
+    color: black;
+    transition: all 250ms ease-in-out;
+}
+
+.card-contact:hover a{
+    color: black;
+    transition: all 250ms ease-in-out;
+}
+
+.card-contact a {
+    color: white;
+}
+
+#menu{
+    display: none;
+}
+
+.show{
+    transform: translateX(0px);
+} 
+
+
+@media all and (max-width: 1300px) {
+    #menu{
+        z-index: 2;
+        color: var(--third);
+        display: block;
+        position: fixed;
+        right: 5%;
+        top: 5%;
+        font-size: 2rem;
+    }
+    nav{
+        transform: translateX(-5000px);
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        flex-direction: column;
+        transition: 150ms all ease-in-out;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+    .heading {
+        padding-top: 10px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .heading .text {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    
+    span{
+        color: var(--secon);
+        font-size: 1.5rem;
+    }
+    
+    .heading .text .business{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .heading .img-container{
+        height: 30%;
+    }
+
+    #skills {
+        width: 90%;
+        height: 60vh;
+        gap: 15px;
+        margin: 5% auto;
+        font-size: 1.5rem;
+        border: 10px groove var(--third);
+    }
+    
+    #skills img {
+        width: 60%;
+    }
+    #about h1 {
+        font-size: 2rem;
+        margin: 0 5%;
+    }
+    
+    #about p {
+        width: 80%;
+        font-size: 1.3rem;
+        padding: 25px;
+    }
+    .card-contact {
+        font-size: 1.5rem;
+    }  
+}
+
+@media all and (max-width: 700px) {
+    .heading .text {
+        font-size: 1rem;
+        gap: 10px;
+    }
+    
+    span{
+        color: var(--secon);
+        font-size: 1.2rem;
+    }
+    
+    .heading .text .business{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .heading .text .business a{
+        font-size: 1rem;
+        margin-top: 2%;
+        padding: 10px;
+        border: 3px solid black;
+    }
+
+    #about h1 {
+        font-size: 1.8rem;
+    }
+    
+    #about p {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+    #projects-heading {
+        font-size: 3rem;
+    }
+    .card-contact {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #skills {
+        gap: 5px;
+        font-size: 1rem;
+    }
+    
+    #skills img {
+        width: 40%;
+        padding: 5px;
+    } 
+    #about h1 {
+        font-size: 1.3rem;
+    }
+    
+    #about p {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    #projects-heading {
+        font-size: 2.5rem;
+    }
+    .card-text p {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    
+    .card-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .card-text a {
+        font-size: 1rem;
+        width: 200px;
+    }
+    .card-contact {
+        font-size: 1rem;
+    }
+
+    nav a{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
