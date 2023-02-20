@@ -17,6 +17,8 @@ cd portfolio-website
 open index.html
 
 Alternatively, you can visit the live website at adnanpobrklic.github.io
+
+
 Usage
 
 The website is designed to showcase my portfolio, skills, and projects. You can navigate to different sections of the website using the navigation bar at the top of the page. Each project has its own page that includes a description, screenshots, and links to the live demo and source code.
