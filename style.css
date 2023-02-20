@@ -260,7 +260,7 @@ span{
     transition: 200ms ease-in-out all;
 }
 
-#projects-heading {
+#projects-heading,#skills-h1 {
     font-size: 4rem;
     text-align: center;
     color: whitesmoke;
@@ -282,7 +282,7 @@ span{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 10% 0px;
+    margin: 50px;
     border-radius: 15px;
     font-size: 2rem;
 }
@@ -309,7 +309,6 @@ span{
 .show{
     transform: translateX(0px);
 } 
-
 
 @media all and (max-width: 1300px) {
     #menu{
@@ -423,7 +422,7 @@ span{
         font-size: 1.1rem;
         padding: 15px;
     }
-    #projects-heading {
+    #projects-heading, #skills-h1 {
         font-size: 3rem;
     }
     .card-contact {
@@ -448,7 +447,7 @@ span{
         width: 40%;
         padding: 5px;
     } 
-    #about h1 {
+    #about h1{
         font-size: 1.5rem;
     }
     
@@ -457,7 +456,7 @@ span{
         width: 100%;
         padding: 5px;
     }
-    #projects-heading {
+    #projects-heading, #skills-h1 {
         font-size: 2.5rem;
     }
     .card-text p {
