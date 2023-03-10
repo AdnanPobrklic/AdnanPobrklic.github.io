@@ -209,11 +209,12 @@ span{
     gap: 50px;
 }
 
-#projects img {
-    min-width: 320px;
+#projects img{
+    min-width: 350px;
+    height: 400px;
     width: 70%;
     border-radius: 15px;
-    border: 10px groove var(--third);
+    border: 5px solid var(--third);
 }
 
 #projects img:hover {
